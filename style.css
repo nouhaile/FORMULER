@@ -1,0 +1,21 @@
+body{
+     background-image:url(6000x4000-px-abstract-f-graphics-wallpaper-preview.jpg);
+     background-size: cover;
+}
+h1{color: aliceblue;
+}
+table{ font-size: x-large;
+    color: rgb(240, 248, 248);
+
+ }
+ input{
+    background:#c56bb2;
+    padding: 8px;
+    border-radius: 10px;
+ }
+ select{
+    background: #c56bb2;
+    padding: 8px;
+    border-radius: 10px;
+    color: aliceblue;
+ }

@@ -5,41 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercice 3 programmation</title>
+ <link rel="stylesheet" href="style.css">
+    <Script defer src="forma.js"></Script>
+
 </head>
+
 <body>
+
+    <h1 id="time" style=>Bonjour la date de Aujourd'hui</h1>
     <FOrm>
         <FIeldset><Legend> <h2> INSCRIPTION</h2></Legend>
             <Table>
                 <tr>
                     <td>NOM<span style="color:red">*</span></td>
-                    <td> <input type="text" required></td>
+                    <td> <input type="text" id="nom" onkeyup="validenom()"></td>
+                    <td id="vnom"></td>
                 </tr>
 
                  <tr>  <Td>Prénome<span style="color:red">*</span></Td> 
-                    <td><input type="text" required></td>
+                    <td><input type="text" id="per"></td>
+                    <td id="vper"></td>
                   </tr>
+                  <tr>
+                    <td>Age<span style="color:red">*</span></td>
+                    <td><input type="date" id="ans"></td>
+                    <td id="vans"></td>
+                </tr>
                   <tr
                   ><td>Code postal<span style="color:red">*</span></td>
-                <td><input type="text" required></td>
+                <td><input type="text" id="code"></td>
+                <td id="vcod"></td>
                 </tr>
                     <tr>
                     <td>Pays<span style="color:red">*</span></td> 
-                    <td><select name="" id="">
+                    <td><select name="" id="py">
                         <OPtion>séléctioné un Pays</OPtion>
                         <OPtion>MAROC</OPtion>
                         <OPtion>FRANCE</OPtion>
                         <OPtion>Algérie</OPtion>
                         <option>Arabie saoudite </option>
-                        <option>Turki</option>
-                        <option>Tunsi</option>
+                        <option>Turquie</option>
+                        <option>Tunisie</option>
                     </select>
+                    <td id="validp"></td>
                 </td> 
             
                 </tr>
                 <tr>
                     <td>Genre<span style="color:red">*</span></td>
-                    <td><input type="radio" name="genre">Masculin
-                        <input type="radio" name="genre">Féminin
+                    <td><input type="radio" name="genre" id="clic">Masculin
+                        <input type="radio" name="genre" id="boton">Féminin
                 </td>
                 </tr>
                 <tr>
@@ -52,21 +67,31 @@
                 <tr>
                     <td>Gmail<span style="color:red">*</span></td>
                     
-                    <td><input type="text" required></td>
+                    <td><input type="text" id="mail"></td>
+                    <td id="xmail"></td>
                 </tr>
                 <tr>
+                    <tr>
+                        <td>Telephone<span style="color:red">*</span></td>
+                        
+                        <td><input type="tel" id="tele"></td>
+                        <td id="xtele"></td>
+                    </tr>
                     <td>Password (6-8 charset) <span style="color:red">*</span></td>
             
-                    <td><input type="password" required></td>
+                    <td><input type="password" id="pasword" onkeyup="validpass();"></td>
+                    <td id="message"></td>
+                
                 </tr>
                 <tr>
                     <td>Vérification Password<span style="color:red">*</span></td>
                     
-                    <td><input type="password" required></td>
+                    <td><input type="password" id="verf" onkeyup="validepassword()"></td>
+                    <td id="mess"></td>
                 </tr>
                 <tr>
                  <td></td>  
-                  <td><input type="submit" value="Envoyer"> <input type="reset" value="Effacer">
+                  <td><input type="button" value="Envoyer" onclick="clique() "> <input type="reset" value="Effacer">
 
                     </td>
                 </tr>
@@ -75,12 +100,7 @@
 
         </FIeldset>
 
-
-
-
     </FOrm>
-     
-    
 
 </body>
 </html>
